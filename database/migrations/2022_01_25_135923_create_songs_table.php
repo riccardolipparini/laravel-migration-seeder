@@ -15,6 +15,7 @@ class CreateSongsTable extends Migration
     {
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->year('publication_year');
             $table->string('artist_name');
             $table->string('album');
